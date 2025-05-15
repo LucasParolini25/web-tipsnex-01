@@ -1,0 +1,68 @@
+.custom-marker {
+  background: transparent;
+}
+
+.marker-pin {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #FCD34D;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease;
+}
+
+.marker-pin:hover {
+  transform: scale(1.1);
+}
+
+.leaflet-popup-content-wrapper {
+  background: #ffffff;
+  color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.leaflet-popup-tip {
+  background: #ffffff;
+}
+
+.leaflet-popup-content {
+  margin: 12px 16px;
+  min-width: 200px;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-title {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 4px;
+}
+
+.popup-address {
+  color: #4b5563;
+  font-size: 0.95em;
+}
+
+/* Controles del mapa */
+.leaflet-control-zoom a {
+  background-color: #ffffff !important;
+  color: #1a1a1a !important;
+  border: none !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #f3f4f6 !important;
+}
+
+/* Atribución */
+.leaflet-control-attribution {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+} 
