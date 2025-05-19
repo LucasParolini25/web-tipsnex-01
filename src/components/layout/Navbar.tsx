@@ -38,13 +38,7 @@ const Navbar = () => {
       <nav className="page-container flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center" aria-label="Nextips - Inicio">
-          <div className="relative">
-            <div className="text-xl md:text-2xl font-bold tracking-tighter">
-              <span className="text-nextips-aqua">Nex</span>
-              <span className="text-nextips-yellow">tips</span>
-            </div>
-            <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-nextips-aqua to-nextips-yellow transform origin-left scale-0 transition-transform duration-300 group-hover:scale-100"></div>
-          </div>
+          <img src="/logo2.webp" alt="Logo Nextips" style={{ width: '10rem', marginTop: '0.5rem' }} />
         </Link>
 
         {/* Desktop Navigation */}
