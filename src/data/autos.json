@@ -1,0 +1,56 @@
+{
+  "autos": [
+    {
+      "id": "fiat-cronos",
+      "title": "Fiat Cronos",
+      "description": "Sedán compacto ideal para la ciudad y viajes, con excelente consumo de combustible y amplio baúl.",
+      "fullDescription": "El Fiat Cronos es la opción perfecta para quienes buscan un sedán moderno y eficiente. Con un amplio baúl de 525 litros, es ideal para viajes y equipaje. Su motor eficiente ofrece un excelente consumo de combustible, mientras que su equipamiento incluye aire acondicionado, dirección asistida, y sistemas de seguridad modernos. El interior espacioso garantiza comodidad tanto para el conductor como para los pasajeros.",
+      "image": "/images/autos/fiat-cronos.webp",
+      "gallery": [
+        "/images/autos/fiat-cronos.webp",
+        "/images/autos/fiat-cronos-2.webp",
+        "/images/autos/fiat-cronos-3.webp",
+        "/images/autos/fiat-cronos-4.webp"
+      ],
+      "category": "Alquiler de autos",
+      "subcategory": "Sedán",
+      "price": "A consultar",
+      "features": [
+        "Aire acondicionado",
+        "Dirección asistida",
+        "ABS",
+        "Airbags",
+        "Radio con Bluetooth",
+        "Cierre centralizado"
+      ],
+      "location": "Canelo 390 y Aeropuerto Internacional de Bariloche",
+      "whatsappLink": "https://wa.me/5492944674325?text=Consulta%20sobre%20alquiler%20de%20Fiat%20Cronos"
+    },
+    {
+      "id": "peugeot-208",
+      "title": "Peugeot 208",
+      "description": "Hatchback moderno y dinámico, perfecto para moverse en la ciudad con estilo y comodidad.",
+      "fullDescription": "El Peugeot 208 combina diseño moderno con tecnología de vanguardia. Su tamaño compacto lo hace perfecto para la ciudad, mientras que su interior premium ofrece una experiencia de conducción superior. Equipado con la última tecnología en seguridad y conectividad, incluyendo pantalla táctil con Android Auto y Apple CarPlay. Su eficiente motor garantiza un excelente rendimiento de combustible sin sacrificar potencia.",
+      "image": "/images/autos/peugeot-208.webp",
+      "gallery": [
+        "/images/autos/peugeot-208.webp",
+        "/images/autos/peugeot-208-2.webp",
+        "/images/autos/peugeot-208-3.webp",
+        "/images/autos/peugeot-208-4.webp"
+      ],
+      "category": "Alquiler de autos",
+      "subcategory": "Hatchback",
+      "price": "A consultar",
+      "features": [
+        "Aire acondicionado",
+        "Dirección asistida",
+        "ABS",
+        "Airbags",
+        "Radio con Bluetooth",
+        "Cierre centralizado"
+      ],
+      "location": "Canelo 390 y Aeropuerto Internacional de Bariloche",
+      "whatsappLink": "https://wa.me/5492944674325?text=Consulta%20sobre%20alquiler%20de%20Peugeot%20208"
+    }
+  ]
+} 

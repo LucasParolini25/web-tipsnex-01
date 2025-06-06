@@ -3,14 +3,17 @@ import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 const CATEGORIES = [{
-  name: 'Excursiones',
-  path: '/categoria/excursiones'
+  name: 'Tips',
+  path: '/categoria/tips'
 }, {
   name: 'Hospedajes',
   path: '/categoria/hospedajes'
 }, {
   name: 'Alquiler de autos',
   path: '/categoria/alquiler-autos'
+}, {
+  name: 'Excursiones',
+  path: '/categoria/excursiones'
 }, {
   name: 'Contacto',
   path: '/contacto'
@@ -68,6 +71,8 @@ const Navbar = () => {
             'animation-delay-300': index === 2
           }, {
             'animation-delay-400': index === 3
+          }, {
+            'animation-delay-500': index === 4
           })} style={{
             animationDelay: `${(index + 1) * 100}ms`
           }} onClick={toggleMobileMenu}>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Instagram, Share2, ArrowRight } from 'lucide-react';
 
-interface TipCardProps {
+interface ItemCardProps {
   id: string;
   title: string;
   description: string;
@@ -14,7 +14,7 @@ interface TipCardProps {
   style?: React.CSSProperties;
 }
 
-const TipCard = ({
+const ItemCard = ({
   id,
   title,
   description,
@@ -23,7 +23,7 @@ const TipCard = ({
   whatsappLink,
   className,
   style,
-}: TipCardProps) => {
+}: ItemCardProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
   
   const shareOnWhatsApp = () => {
@@ -110,4 +110,4 @@ const TipCard = ({
   );
 };
 
-export default TipCard;
+export default ItemCard; 

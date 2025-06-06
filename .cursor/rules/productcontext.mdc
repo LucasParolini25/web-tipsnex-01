@@ -1,0 +1,16 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Product Context - Nextips
+
+## Problemas que resuelve
+- Fragmentación de información y dificultad para administración eficiente.
+- Necesidad de modularidad para facilitar la escalabilidad.
+
+## Cómo debería funcionar
+- Modularidad: cada categoría (excursiones, hospedajes, autos, tips) opera como componente individual.
+- Estructura flexible para agregar nuevas subcategorías fácilmente en todas las categorías.
+- Comunicación directa y sencilla mediante enlaces WhatsApp.
+

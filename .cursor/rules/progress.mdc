@@ -1,0 +1,16 @@
+# Progress - Nextips
+
+## Estado actual
+✅ Modularización básica implementada para categorías existentes (Excursiones, Hospedajes, Autos).
+
+## Próximas tareas
+- [ ] Crear e implementar la categoría Tips.
+- [ ] Implementar estructura flexible para subcategorías en todas las categorías.
+- [ ] Refactorizar lógica común en hooks o contextos reutilizables.
+- [ ] Optimizar la carga y rendimiento de datos modulares.
+- [ ] Generar prompts para Cursor AI que faciliten el desarrollo incremental de la aplicación.
+
+## Problemas conocidos
+- Optimización necesaria para manejo eficiente de múltiples archivos JSON.
+- Evaluación del rendimiento de carga modular especialmente en móviles.
+- Definición pendiente para estrategia backend y gestión dinámica de contenido.

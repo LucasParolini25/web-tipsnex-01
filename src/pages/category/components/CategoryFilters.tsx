@@ -1,22 +1,17 @@
-
 import { X } from 'lucide-react';
 
 interface CategoryFiltersProps {
   subcategories: string[];
-  selectedSubcategory: string | null;
-  setSelectedSubcategory: (subcategory: string | null) => void;
-  hasActiveFilters: boolean;
-  clearFilters: () => void;
+  selectedSubcategory: string;
+  onSubcategoryChange: (subcategory: string | null) => void;
 }
 
 const CategoryFilters = ({ 
   subcategories, 
   selectedSubcategory, 
-  setSelectedSubcategory, 
-  hasActiveFilters, 
-  clearFilters 
+  onSubcategoryChange
 }: CategoryFiltersProps) => {
-  if (subcategories.length === 0 && !hasActiveFilters) {
+  if (subcategories.length === 0) {
     return null;
   }
 
@@ -32,7 +27,7 @@ const CategoryFilters = ({
               {subcategories.map(subcategory => (
                 <div key={subcategory} className="flex items-center">
                   <button
-                    onClick={() => setSelectedSubcategory(selectedSubcategory === subcategory ? null : subcategory)}
+                    onClick={() => onSubcategoryChange(selectedSubcategory === subcategory ? null : subcategory)}
                     className={`flex items-center w-full p-2 rounded-md transition-colors ${
                       selectedSubcategory === subcategory
                         ? 'bg-nextips-aqua/20 text-nextips-aqua'
@@ -50,16 +45,6 @@ const CategoryFilters = ({
               ))}
             </div>
           </div>
-        )}
-        
-        {hasActiveFilters && (
-          <button
-            onClick={clearFilters}
-            className="text-sm text-nextips-yellow hover:text-nextips-aqua flex items-center"
-          >
-            <X className="h-4 w-4 mr-1" />
-            Limpiar filtros
-          </button>
         )}
       </div>
     </div>

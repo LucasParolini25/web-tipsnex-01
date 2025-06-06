@@ -1,0 +1,50 @@
+{
+  "hospedajes": [
+    {
+      "id": "hotel-boutique",
+      "title": "Hotel Boutique Bariloche",
+      "description": "Elegancia Patagónica con Vistas al Nahuel Huapi",
+      "fullDescription": "Disfruta de una experiencia única con vistas panorámicas al Nahuel Huapi y servicios premium como spa y piscina climatizada. Ideal para parejas, familias o viajes en grupo, nuestro hotel combina elegancia con la calidez patagónica. ¡Reserva ahora y vive Bariloche con todo el confort!",
+      "image": "/images/hospedajes/hotel-boutique/main.webp",
+      "gallery": [
+        "/images/hospedajes/hotel-boutique/main.webp",
+        "/images/hospedajes/hotel-boutique/room.webp",
+        "/images/hospedajes/hotel-boutique/room2.webp",
+        "/images/hospedajes/hotel-boutique/view.webp",
+        "/images/hospedajes/hotel-boutique/lobby.webp"
+      ],
+      "category": "Hospedajes",
+      "subcategory": "Hoteles",
+      "price": "A consultar",
+      "amenities": [
+        "Habitaciones con vista al lago",
+        "Departamentos amplios para familias",
+        "Full House (exclusividad para grupos)"
+      ],
+      "location": "Los Cerezos 5407, San Carlos de Bariloche",
+      "whatsappLink": "https://wa.me/5492944674325?text=Hola%2C%20estoy%20interesado%20en%20el%20Hotel%20Boutique%20Bariloche"
+    },
+    {
+      "id": "cabanas-pura-vida",
+      "title": "Cabañas Pura Vida",
+      "description": "Descanso y comodidad cerca del lago y la ciudad",
+      "fullDescription": "Viví la experiencia de Bariloche desde una cabaña cálida y cómoda, con parrilla y cochera propia. A metros del Lago Nahuel Huapi y con fácil acceso al centro, Cabañas Pura Visa es perfecta para familias, parejas o viajeros que buscan tranquilidad sin alejarse de todo.",
+      "image": "/images/hospedajes/cabanas-pura-vida/main.webp",
+      "gallery": [
+        "/images/hospedajes/cabanas-pura-vida/main.webp",
+        "/images/hospedajes/cabanas-pura-vida/interior.webp",
+        "/images/hospedajes/cabanas-pura-vida/exterior.webp",
+        "/images/hospedajes/cabanas-pura-vida/garden.webp"
+      ],
+      "category": "Hospedajes",
+      "subcategory": "Cabañas",
+      "price": "A consultar",
+      "amenities": [
+        "Cabañas familiares con 2 habitaciones",
+        "Estilo dúplex con espacio verde"
+      ],
+      "location": "Cabildo 150, R8400 San Carlos de Bariloche",
+      "whatsappLink": "https://wa.me/5492944674325?text=Hola%2C%20me%20interesan%20las%20Cabañas%20Pura%20Vida"
+    }
+  ]
+} 

@@ -1,46 +1,36 @@
-
 import { SlidersHorizontal, X } from 'lucide-react';
 
 interface CategoryMobileFiltersProps {
-  isFilterOpen: boolean;
-  setIsFilterOpen: (isOpen: boolean) => void;
-  hasActiveFilters: boolean;
+  isOpen: boolean;
+  onClose: () => void;
   subcategories: string[];
   selectedSubcategory: string | null;
-  setSelectedSubcategory: (subcategory: string | null) => void;
-  clearFilters: () => void;
+  onSubcategoryChange: (subcategory: string | null) => void;
 }
 
 const CategoryMobileFilters = ({
-  isFilterOpen,
-  setIsFilterOpen,
-  hasActiveFilters,
+  isOpen,
+  onClose,
   subcategories,
   selectedSubcategory,
-  setSelectedSubcategory,
-  clearFilters
+  onSubcategoryChange
 }: CategoryMobileFiltersProps) => {
   return (
     <div className="md:hidden">
       <button
-        onClick={() => setIsFilterOpen(!isFilterOpen)}
+        onClick={() => onClose()}
         className="flex items-center mb-4 px-4 py-2 rounded-lg bg-nextips-darkBlue/30 border border-white/10 text-white"
       >
         <SlidersHorizontal className="h-4 w-4 mr-2" />
         Filtros
-        {hasActiveFilters && (
-          <span className="ml-2 bg-nextips-aqua text-nextips-dark text-xs rounded-full w-5 h-5 flex items-center justify-center">
-            !
-          </span>
-        )}
       </button>
       
-      {isFilterOpen && (
+      {isOpen && (
         <div className="bg-nextips-darkBlue/90 backdrop-blur-lg rounded-xl p-6 mb-6 border border-white/10 animate-fade-in">
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-lg font-semibold text-nextips-aqua">Filtros</h3>
             <button
-              onClick={() => setIsFilterOpen(false)}
+              onClick={onClose}
               className="text-gray-400 hover:text-white"
             >
               <X className="h-5 w-5" />
@@ -55,7 +45,7 @@ const CategoryMobileFilters = ({
                   <button
                     key={subcategory}
                     onClick={() => {
-                      setSelectedSubcategory(selectedSubcategory === subcategory ? null : subcategory);
+                      onSubcategoryChange(selectedSubcategory === subcategory ? null : subcategory);
                     }}
                     className={`p-2 rounded-md text-center text-sm transition-colors ${
                       selectedSubcategory === subcategory
@@ -70,19 +60,9 @@ const CategoryMobileFilters = ({
             </div>
           )}
           
-          <div className="flex justify-between">
-            {hasActiveFilters && (
-              <button
-                onClick={clearFilters}
-                className="text-sm text-nextips-yellow hover:text-nextips-aqua flex items-center"
-              >
-                <X className="h-4 w-4 mr-1" />
-                Limpiar filtros
-              </button>
-            )}
-            
+          <div className="flex justify-end">
             <button
-              onClick={() => setIsFilterOpen(false)}
+              onClick={onClose}
               className="text-sm bg-nextips-aqua text-nextips-dark px-4 py-2 rounded-md"
             >
               Aplicar

@@ -1,0 +1,16 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Active Context - Nextips
+
+## Cambios recientes
+- Separación inicial de categorías en componentes individuales (Excursiones, Hospedajes, Autos).
+
+## Próximos pasos
+1. Crear e implementar la categoría Tips.
+2. Implementar estructura flexible para subcategorías en todas las categorías.
+3. Modularizar aún más la lógica y componentes compartidos.
+4. Optimizar la gestión y carga de datos desde archivos JSON o futuras bases de datos.
+

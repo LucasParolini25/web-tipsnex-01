@@ -1,0 +1,73 @@
+{
+  "tips": [
+    {
+      "id": "tip-005",
+      "titulo": "¿Qué llevar a una caminata de trekking?",
+      "categoria": "equipamiento",
+      "subcategoria": "trekking",
+      "descripcion": "No olvides llevar calzado adecuado, abrigo, agua y protector solar. Las tiendas Patagonia y Tromen ofrecen alquiler y compra de equipamiento.",
+      "detalles": [
+        "Patagonia: Mitre 500",
+        "Tromen: Moreno 260"
+      ],
+      "imagen": null,
+      "relevancia": "esencial",
+      "tags": ["trekking", "equipamiento", "seguridad"],
+      "contacto": null,
+      "enlaces": []
+    },
+    {
+      "id": "tip-004",
+      "titulo": "¿Dónde averiguar pasajes de colectivos?",
+      "categoria": "movilidad",
+      "subcategoria": "colectivos",
+      "descripcion": "En la terminal de ómnibus y oficinas del centro podés consultar horarios y tarifas de los colectivos regionales.",
+      "detalles": [
+        "Terminal: Av. 12 de Octubre 1113",
+        "Centro: Mitre 340"
+      ],
+      "imagen": null,
+      "relevancia": "útil",
+      "tags": ["colectivo", "pasajes", "transporte"],
+      "contacto": "(0294) 4429876",
+      "enlaces": [
+        {
+          "label": "Consultá horarios aquí",
+          "url": "https://miempresa.com.ar/pasajes"
+        }
+      ]
+    },
+    {
+      "id": "tip-003",
+      "titulo": "Refugio Italia - Laguna Negra",
+      "categoria": "refugios",
+      "subcategoria": "lagos",
+      "descripcion": "Una caminata de dificultad media, ideal para quienes buscan vistas únicas y cerveza artesanal al llegar.",
+      "detalles": [
+        "14km ida, 800m de desnivel",
+        "Servicios: comida, cerveza artesanal, agua potable"
+      ],
+      "imagen": null,
+      "relevancia": "aventura",
+      "tags": ["trekking", "refugio", "cerveza"],
+      "contacto": null,
+      "enlaces": []
+    },
+    {
+      "id": "tip-002",
+      "titulo": "Experiencia cervecera en Bariloche",
+      "categoria": "gastronomía",
+      "subcategoria": "cervecerías",
+      "descripcion": "Visitá Cervecería Patagonia para degustar cervezas artesanales con vistas al lago Nahuel Huapi.",
+      "detalles": [
+        "Ruta Provincial 77, km 24.7",
+        "Ideal para atardeceres"
+      ],
+      "imagen": null,
+      "relevancia": "recomendado",
+      "tags": ["cerveza", "panorámica", "local"],
+      "contacto": "(0294) 4453156",
+      "enlaces": []
+    }
+  ]
+} 

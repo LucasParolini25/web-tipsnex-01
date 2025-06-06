@@ -1,0 +1,30 @@
+# Brief del Proyecto NEX / Nextips
+
+## Estado actual de la web (06/2025)
+
+Incluimos una serie de capturas para dejar registrado el estado de la plataforma antes de comenzar las mejoras del MVP.
+
+- **Landing principal**: `home-nextips.png`
+- **Sección de Tips y Consejos**: `tips-nextips.png` + cards individuales `cardtip-nextips.png`
+- **Sección de Excursiones**: `excursiones-nextips.png` + card `cardexcursiones-nextips.png`
+- **Detalle de excursión**: `cardexcursiones-nextips.png`
+- **Sección de Alquiler de Autos**: `autos-nextips.png` + cards `cardauto-nextips.png`
+- **Sección de Hospedajes**: `hospedajes-nextips.png` + card `cardhospedaje-nextips.png`
+- **Formulario de Contacto**: `contacto-nextips.png`
+
+**Notas generales:**
+- El diseño está orientado a una experiencia visual limpia y moderna, con predominancia de tonos oscuros, detalles en amarillo y aqua, y fuerte integración con WhatsApp.
+- Cada sección principal tiene cards destacadas, filtros y opción de contacto.
+- Faltan ajustar detalles visuales, optimización responsive, imágenes, copy y automatización de algunas acciones.
+
+_Para ver cada sección, revisar las imágenes en la carpeta `capturas-estado-inicial`._
+
+---
+
+## Próximos pasos sugeridos
+
+- Corregir y optimizar visuales, carga de imágenes y redirecciones.
+- Formalizar paleta, tipografía y manual de marca.
+- Definir y documentar modelo de carga de tips.
+- Automatizar métricas y feedback de usuarios.
+- Migrar estructura de datos a un sistema dinámico cuando el MVP esté estable.

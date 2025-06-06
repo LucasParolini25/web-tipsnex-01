@@ -1,0 +1,16 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Tech Context - Nextips
+
+## Stack Actualizado
+- **Core:** React 18, Vite, TypeScript
+- **UI:** TailwindCSS, Radix UI, Embla Carousel, shadcn/ui
+- **Datos:** JSON modularizados (base para futura integración backend)
+
+## Decisiones Técnicas Clave
+- Estructura modular intensiva para mantenimiento sencillo y escalabilidad.
+- Preparación para integración backend con JSON independientes.
+

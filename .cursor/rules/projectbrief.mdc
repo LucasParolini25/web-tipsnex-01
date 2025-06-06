@@ -1,0 +1,22 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Nextips - Plataforma de Recomendaciones Turísticas para Bariloche
+
+## Visión General
+Nextips es una aplicación web moderna orientada al turismo en Bariloche, diseñada para ser la fuente confiable y centralizada de recomendaciones curadas sobre excursiones, hospedajes, alquiler de autos y otros tips relacionados.
+
+## Objetivos Principales
+- Ofrecer recomendaciones claras y curadas.
+- Facilitar la conexión directa entre turistas y proveedores vía WhatsApp.
+- Crear una experiencia intuitiva sin registro para usuarios.
+- Simplificar la gestión del contenido.
+- Permitir compartir recomendaciones fácilmente en redes sociales.
+
+## MVP Actualizado
+- Sistema modular con componentes independientes por categoría: excursiones, hospedajes, alquiler de autos y tips.
+- Carga independiente y escalable de datos.
+- Preparación para subcategorías en todas las categorías.
+

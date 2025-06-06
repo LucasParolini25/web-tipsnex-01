@@ -1,27 +1,29 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/home/Hero';
 import CategorySection from '@/components/home/CategorySection';
-import TipCard from '@/components/ui/TipCard';
 import { ChevronRight } from 'lucide-react';
-import { categoryData } from '@/pages/admin/utils/adminData';
+import { TIPS_DATA } from './category/utils/categoryData';
+import ItemCard from '@/components/ui/ItemCard';
+import { Item } from '@/types/category';
 
-// Seleccionar un tip de cada categoría para mostrar
-const FEATURED_TIPS = [
-  // Excursión destacada
-  categoryData.find(cat => cat.id === 'excursiones')?.tips[0],
-  // Hospedaje destacado
-  categoryData.find(cat => cat.id === 'hospedajes')?.tips[0],
-  // Auto destacado
-  categoryData.find(cat => cat.id === 'alquiler-autos')?.tips[0],
-  // Otra excursión
-  categoryData.find(cat => cat.id === 'excursiones')?.tips[1],
-  // Otro hospedaje
-  categoryData.find(cat => cat.id === 'hospedajes')?.tips[1],
-  // Otro auto
-  categoryData.find(cat => cat.id === 'alquiler-autos')?.tips[1],
-].filter(tip => tip !== undefined);
+// Seleccionar un item de cada categoría para mostrar
+const FEATURED_ITEMS = [
+  // Excursiones
+  TIPS_DATA['excursiones'][0],
+  // Hospedajes
+  TIPS_DATA['hospedajes'][0],
+  // Autos
+  TIPS_DATA['alquiler-autos'][0],
+  // Tips
+  TIPS_DATA['tips'][0],
+  // Más excursiones
+  TIPS_DATA['excursiones'][1],
+  // Más hospedajes
+  TIPS_DATA['hospedajes'][1],
+].filter(item => item !== undefined);
 
 const Index = () => {
   useEffect(() => {
@@ -38,34 +40,32 @@ const Index = () => {
       {/* Categorías */}
       <CategorySection />
       
-      {/* Tips Destacados */}
-      <section className="section-p relative">
-        <div className="page-container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Tips <span className="text-nextips-yellow">Destacados</span>
-            </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Nuestras recomendaciones más populares elegidas por viajeros como tú.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {FEATURED_TIPS.map((tip, index) => (
-              <TipCard
-                key={tip.id}
-                id={tip.id}
-                title={tip.title}
-                description={tip.description}
-                image={tip.image}
-                category={tip.category}
-                className="animate-scale-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              />
-            ))}
-          </div>
+      {/* Items Destacados */}
+      <div className="py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">
+            Items <span className="text-nextips-yellow">Destacados</span>
+          </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Descubre nuestras recomendaciones más populares para tu viaje a Bariloche
+          </p>
         </div>
-      </section>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {FEATURED_ITEMS.map((item, index) => (
+            <ItemCard
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+              category={item.category}
+              className="animate-scale-in"
+              style={{ animationDelay: `${index * 100}ms` }}
+            />
+          ))}
+        </div>
+      </div>
       
       {/* CTA */}
       <section className="py-20 relative overflow-hidden">

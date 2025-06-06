@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import CategoryPage from "./pages/category/CategoryPage";
-import TipDetail from "./pages/TipDetail";
+import ItemDetail from "./pages/ItemDetail";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import AdminLogin from "./pages/admin/AdminLogin";
@@ -28,7 +27,7 @@ const App = () => (
           {/* Rutas públicas */}
           <Route path="/" element={<Index />} />
           <Route path="/categoria/:categoryId" element={<CategoryPage />} />
-          <Route path="/tip/:tipId" element={<TipDetail />} />
+          <Route path="/item/:itemId" element={<ItemDetail />} />
           <Route path="/contacto" element={<Contact />} />
           
           {/* Rutas de administración */}

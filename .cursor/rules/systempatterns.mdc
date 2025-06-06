@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# System Patterns - Nextips
+
+## Arquitectura sugerida para implementación futura
+
+src/
+├── components/
+│ ├── categories/
+│ │ ├── Excursiones.tsx
+│ │ ├── Hospedajes.tsx
+│ │ ├── Autos.tsx
+│ │ └── Tips.tsx
+│ └── ui/
+
+├── data/
+│ ├── excursiones.json
+│ ├── hospedajes.json
+│ ├── autos.json
+│ └── tips.json
+
+├── hooks/
+├── lib/
+├── pages/
+│ ├── admin/
+│ ├── category/
+│ ├── Contact.tsx
+│ ├── Index.tsx
+│ ├── NotFound.tsx
+│ └── TipDetail.tsx
+├── styles/
+└── types/
+
+
+## Nota
+La estructura actual del proyecto difiere ligeramente. Implementar esta estructura facilitará el mantenimiento futuro y no generará errores si se realiza mediante una migración controlada.
+

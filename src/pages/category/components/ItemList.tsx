@@ -1,25 +1,24 @@
-
 import TipCard from '@/components/ui/TipCard';
-import { Tip } from '../utils/categoryData';
+import { Item } from '@/types/category';
 
-interface TipsListProps {
-  filteredTips: Tip[];
+interface ItemListProps {
+  filteredItems: Item[];
   clearFilters: () => void;
 }
 
-const TipsList = ({ filteredTips, clearFilters }: TipsListProps) => {
+const ItemList = ({ filteredItems, clearFilters }: ItemListProps) => {
   return (
     <div className="flex-1">
-      {filteredTips.length > 0 ? (
+      {filteredItems.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredTips.map((tip, index) => (
+          {filteredItems.map((item, index) => (
             <TipCard
-              key={tip.id}
-              id={tip.id}
-              title={tip.title}
-              description={tip.description}
-              image={tip.image}
-              category={tip.subcategory || tip.category}
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+              category={item.subcategory || item.category}
               className="animate-scale-in"
               style={{ animationDelay: `${index * 100}ms` }}
             />
@@ -40,4 +39,4 @@ const TipsList = ({ filteredTips, clearFilters }: TipsListProps) => {
   );
 };
 
-export default TipsList;
+export default ItemList;
