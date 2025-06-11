@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Instagram, Share2, ArrowRight } from 'lucide-react';
 
@@ -26,6 +26,7 @@ const TipCard = ({
 }: TipCardProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
   
+  const navigate = useNavigate();
   const shareOnWhatsApp = () => {
     if (whatsappLink) {
       window.open(whatsappLink, '_blank');
@@ -41,6 +42,7 @@ const TipCard = ({
 
   return (
     <div 
+      onClick={() => navigate(`/item/${id}`)}
       className={cn(
         "group relative overflow-hidden rounded-xl bg-nextips-dark border border-white/10 transition-all duration-500 hover:shadow-xl hover:shadow-nextips-aqua/10 hover:border-nextips-aqua/30",
         className

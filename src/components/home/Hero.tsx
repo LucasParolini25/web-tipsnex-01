@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface Slide {
   image: string;
@@ -24,7 +25,7 @@ const SLIDES: Slide[] = [
     link: "/categoria/hospedajes"
   },
   {
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
+    image: "https://plus.unsplash.com/premium_photo-1671737775599-b3d46ecaf78b?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Aventura sobre ruedas",
     description: "Alquila tu auto y recorre los paisajes a tu ritmo",
     link: "/categoria/alquiler-autos"
@@ -115,13 +116,21 @@ const Hero = () => {
               <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8">
                 {slide.description}
               </p>
-              <a
+              {/* <a
                 href={slide.link}
                 className="inline-flex items-center bg-nextips-aqua hover:bg-nextips-lightAqua text-nextips-dark font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:translate-y-[-2px]"
               >
                 Explorar
                 <ChevronRight className="ml-1 h-5 w-5" />
-              </a>
+              </a> */}
+              <Link to={slide.link}>
+                <button
+                  className="inline-flex items-center bg-nextips-aqua hover:bg-nextips-lightAqua text-nextips-dark font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:translate-y-[-2px]"
+                >
+                  Explorar
+                  <ChevronRight className="ml-1 h-5 w-5" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

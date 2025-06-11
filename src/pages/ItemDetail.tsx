@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import { ArrowLeft, Share2, Instagram, MapPin, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Share2, Instagram, MapPin, ExternalLink, ChevronLeft, ChevronRight, MessageCircle } from 'lucide-react';
 import { Item } from '@/types/category';
 import { getItemsByCategory } from '@/pages/category/utils/categoryData';
 import { Button } from "@/components/ui/button";
@@ -42,7 +42,7 @@ const ItemDetail = () => {
   }
   
   // Obtener todas las imágenes disponibles
-  const images = item.gallery || [item.image];
+  const images = (item.gallery && item.gallery.length > 0) ? item.gallery : [item.image];
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
@@ -65,11 +65,9 @@ const ItemDetail = () => {
   };
   
   const handleWhatsApp = () => {
-    if (item?.whatsappLink) {
-      window.open(item.whatsappLink, '_blank');
-    } else {
-      toast.error('No hay enlace de WhatsApp disponible');
-    }
+    const defaultNumber = '5492944674325';
+    const whatsappLink = item?.whatsappLink || `https://wa.me/${defaultNumber}`;
+    window.open(whatsappLink, '_blank');
   };
   
   const handleInstagram = () => {
@@ -79,9 +77,7 @@ const ItemDetail = () => {
   
   return (
     <MainLayout>
-      <div className="min-h-screen bg-nextips-dark text-white">
-        <Navbar />
-        
+      <div className="min-h-screen bg-nextips-dark text-white">      
         <main className="pt-24 pb-16">
           <div className="page-container py-12">
             <div className="max-w-4xl mx-auto">
@@ -326,21 +322,20 @@ const ItemDetail = () => {
                     {/* Botones de acción */}
                     <div className="flex flex-col space-y-3">
                       <Button
-                        onClick={handleShare}
+                        onClick={handleWhatsApp}
                         variant="outline"
                         className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:translate-y-[-2px]"
                       >
-                        <Share2 className="h-5 w-5 mr-2" />
-                        Compartir
+                        <MessageCircle className="h-5 w-5 mr-2" />
+                        Whatsapp
                       </Button>
-                      
                       <Button
-                        onClick={handleWhatsApp}
+                        onClick={() => window.open('https://www.instagram.com/tipsnex/', '_blank')}
                         variant="outline"
                         className="w-full bg-nextips-dark border border-white/20 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:translate-y-[-2px] hover:bg-pink-600/20 hover:border-pink-500/40"
                       >
                         <Instagram className="h-5 w-5 mr-2" />
-                        WhatsApp
+                        Instagram
                       </Button>
                     </div>
                   </div>
@@ -397,9 +392,16 @@ const ItemDetail = () => {
                       </div>
                     </div>
                   ) : (
-                    <p className="text-gray-200 leading-relaxed">{item.fullDescription}</p>
+                    <div className="space-y-4 text-gray-200 leading-relaxed">
+                      {item.details && item.details.length > 0 && (
+                        <ul className="list-disc pl-5 space-y-2 mt-4">
+                          {item.details.map((detalle, index) => (
+                            <li key={index}>{detalle}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                   )}
-                  
                   {item.whatsappLink && (
                     <div className="mt-8 flex justify-center">
                       <a
@@ -418,8 +420,6 @@ const ItemDetail = () => {
             </div>
           </div>
         </main>
-        
-        <Footer />
       </div>
     </MainLayout>
   );

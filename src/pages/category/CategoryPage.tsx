@@ -11,6 +11,7 @@ import { getItemsByCategory } from './utils/categoryData';
 import MainLayout from '@/components/layout/MainLayout';
 import { SECTION_DATA, SectionData } from '@/utils/sectionData';
 import SectionHeader from '@/components/layout/SectionHeader';
+import { useLocation } from 'react-router-dom';
 
 // Valores válidos de categoría
 const VALID_CATEGORIES = ['excursiones', 'hospedajes', 'alquiler-autos', 'tips'] as const;
@@ -25,6 +26,7 @@ const DEFAULT_SECTION: SectionData = {
 
 const CategoryPage = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
+  const location = useLocation();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -41,6 +43,10 @@ const CategoryPage = () => {
       window.location.href = '/';
     }
   }, [categoryId]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   // Obtener subcategorías únicas para esta categoría
   const subcategories = Array.isArray(items) 

@@ -52,14 +52,13 @@ export const TipCard = ({
         {detalles.length > 0 && (
           <div className="pt-2">
             <span className="text-sm font-medium block mb-1">Detalles:</span>
-            <div className="space-y-1">
+            <ul className="list-disc pl-5 space-y-1">
               {detalles.map((detalle, index) => (
-                <div key={index} className="flex items-start space-x-2">
-                  <MapPin className="h-4 w-4 text-gray-500 mt-1" />
-                  <span className="text-sm text-gray-600">{detalle}</span>
-                </div>
+                <li key={index} className="text-sm text-gray-600">
+                  {detalle}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         )}
         <div className="pt-2">

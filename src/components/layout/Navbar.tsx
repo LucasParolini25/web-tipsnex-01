@@ -6,11 +6,11 @@ const CATEGORIES = [{
   name: 'Tips',
   path: '/categoria/tips'
 }, {
-  name: 'Hospedajes',
-  path: '/categoria/hospedajes'
-}, {
   name: 'Alquiler de autos',
   path: '/categoria/alquiler-autos'
+}, {
+  name: 'Hospedajes',
+  path: '/categoria/hospedajes'
 }, {
   name: 'Excursiones',
   path: '/categoria/excursiones'
@@ -37,6 +37,18 @@ const Navbar = () => {
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location]);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      window.scrollTo(0, 0);
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
   return <header className={cn('fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out', isScrolled ? 'bg-nextips-dark/90 backdrop-blur-md py-3 shadow-md' : 'bg-transparent py-5')}>
       <nav className="page-container flex items-center justify-between">
         {/* Logo */}

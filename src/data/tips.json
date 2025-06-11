@@ -1,73 +1,139 @@
 {
   "tips": [
     {
-      "id": "tip-005",
-      "titulo": "¿Qué llevar a una caminata de trekking?",
-      "categoria": "equipamiento",
-      "subcategoria": "trekking",
-      "descripcion": "No olvides llevar calzado adecuado, abrigo, agua y protector solar. Las tiendas Patagonia y Tromen ofrecen alquiler y compra de equipamiento.",
+      "id": "tip-001",
+      "titulo": "Los mejores chocolates de Bariloche",
+      "categoria": "Gastronomía",
+      "subcategoria": "Chocolate",
+      "descripcion": "Explora las chocolaterías artesanales de Bariloche. No te pierdas estas dulces paradas en tu recorrido por la ciudad.",
       "detalles": [
-        "Patagonia: Mitre 500",
-        "Tromen: Moreno 260"
+        "Ubicación: Centro cívico y Av. Mitre",
+        "Reserva previa: No requerida",
+        "Apto niños: Sí",
+        "Horario: Generalmente de 10:00 a 21:00",
+        "\"Date un dulce lujo en Bariloche\"",
+        "Relevancia: esencial"
       ],
-      "imagen": null,
+      "image": "/images/tips/fiesta-chocolate.webp",
       "relevancia": "esencial",
-      "tags": ["trekking", "equipamiento", "seguridad"],
-      "contacto": null,
-      "enlaces": []
-    },
-    {
-      "id": "tip-004",
-      "titulo": "¿Dónde averiguar pasajes de colectivos?",
-      "categoria": "movilidad",
-      "subcategoria": "colectivos",
-      "descripcion": "En la terminal de ómnibus y oficinas del centro podés consultar horarios y tarifas de los colectivos regionales.",
-      "detalles": [
-        "Terminal: Av. 12 de Octubre 1113",
-        "Centro: Mitre 340"
-      ],
-      "imagen": null,
-      "relevancia": "útil",
-      "tags": ["colectivo", "pasajes", "transporte"],
-      "contacto": "(0294) 4429876",
-      "enlaces": [
-        {
-          "label": "Consultá horarios aquí",
-          "url": "https://miempresa.com.ar/pasajes"
-        }
-      ]
-    },
-    {
-      "id": "tip-003",
-      "titulo": "Refugio Italia - Laguna Negra",
-      "categoria": "refugios",
-      "subcategoria": "lagos",
-      "descripcion": "Una caminata de dificultad media, ideal para quienes buscan vistas únicas y cerveza artesanal al llegar.",
-      "detalles": [
-        "14km ida, 800m de desnivel",
-        "Servicios: comida, cerveza artesanal, agua potable"
-      ],
-      "imagen": null,
-      "relevancia": "aventura",
-      "tags": ["trekking", "refugio", "cerveza"],
+      "tags": ["gastronomía", "chocolate", "familia"],
       "contacto": null,
       "enlaces": []
     },
     {
       "id": "tip-002",
-      "titulo": "Experiencia cervecera en Bariloche",
-      "categoria": "gastronomía",
-      "subcategoria": "cervecerías",
-      "descripcion": "Visitá Cervecería Patagonia para degustar cervezas artesanales con vistas al lago Nahuel Huapi.",
+      "titulo": "Sendero Cerro Llao Llao",
+      "categoria": "Senderos",
+      "subcategoria": "Senderismo",
+      "descripcion": "Ideal para principiantes, disfruta vistas únicas del Lago Nahuel Huapi y los alrededores.",
       "detalles": [
-        "Ruta Provincial 77, km 24.7",
-        "Ideal para atardeceres"
+        "Ubicación: Parque Municipal Llao Llao",
+        "Equipamiento: Calzado cómodo, agua, protección solar",
+        "Reserva previa: No requerida",
+        "Apto niños: Sí",
+        "\"Cada paso, una aventura nueva\"",
+        "Relevancia: media"
       ],
-      "imagen": null,
-      "relevancia": "recomendado",
-      "tags": ["cerveza", "panorámica", "local"],
-      "contacto": "(0294) 4453156",
+      "image": "/images/tips/sendero-llao-llao.webp",
+      "relevancia": "media",
+      "tags": ["senderismo", "familia", "naturaleza"],
+      "contacto": null,
+      "enlaces": []
+    },
+    {
+      "id": "tip-003",
+      "titulo": "Qué llevar para esquiar por primera vez",
+      "categoria": "Deportes",
+      "subcategoria": "Esquí",
+      "descripcion": "Consejos esenciales sobre equipamiento y ropa para quienes se inician en el esquí.",
+      "detalles": [
+        "Ubicación: Cerro Catedral",
+        "Equipamiento: Ropa térmica, gafas de sol o antiparras, protector solar, guantes, casco",
+        "Reserva previa: recomendada para alquiler de equipo",
+        "Apto niños: Sí, desde los 6 años",
+        "Horario: generalmente 09:00 - 17:00",
+        "\"Vive tu primera aventura en la nieve\"",
+        "Relevancia: esencial"
+      ],
+      "image": "/images/tips/ski-bariloche.webp",
+      "relevancia": "esencial",
+      "tags": ["esquí", "deportes", "invierno"],
+      "contacto": null,
+      "enlaces": []
+    },
+    {
+      "id": "tip-004",
+      "titulo": "Documentos esenciales para tu viaje",
+      "categoria": "Información general",
+      "subcategoria": "Trámites",
+      "descripcion": "Asegúrate de tener toda la documentación necesaria para un viaje tranquilo.",
+      "detalles": [
+        "Documentación necesaria: DNI o pasaporte, Licencia de conducir, Seguro del vehículo",
+        "Licencia digital (Mi Argentina): es legal y aceptada en Bariloche",
+        "\"Viaja tranquilo, lleva todo contigo\"",
+        "Relevancia: esencial"
+      ],
+      "image": "/images/tips/mi-argentina.webp",
+      "relevancia": "esencial",
+      "tags": ["trámites", "viaje", "seguridad"],
+      "contacto": null,
+      "enlaces": []
+    },
+    {
+      "id": "tip-005",
+      "titulo": "Paseo por el Centro Cívico",
+      "categoria": "Ocio",
+      "subcategoria": "Gratis",
+      "descripcion": "Visita obligatoria en Bariloche, ideal para fotos, compras y relajarse en un ambiente histórico.",
+      "detalles": [
+        "Ubicación: Centro de la ciudad",
+        "Apto niños: Sí",
+        "\"Disfruta de la historia en cada rincón\"",
+        "Relevancia: alta"
+      ],
+      "image": "/images/tips/centro-civico.webp",
+      "relevancia": "alta",
+      "tags": ["gratis", "familia", "ocio"],
+      "contacto": null,
+      "enlaces": []
+    },
+    {
+      "id": "tip-006",
+      "titulo": "Playa Pública del Lago Nahuel Huapi",
+      "categoria": "Ocio",
+      "subcategoria": "Gratis",
+      "descripcion": "Un día perfecto para relajarse en las playas del Nahuel Huapi.",
+      "detalles": [
+        "Ubicación: Costanera de Bariloche",
+        "Equipamiento: Traje de baño, toallas, protector solar",
+        "Apto niños: Sí",
+        "\"Sol, arena y paisajes inolvidables\"",
+        "Relevancia: alta"
+      ],
+      "image": "/images/tips/playa-nahuel-huapi.webp",
+      "relevancia": "alta",
+      "tags": ["gratis", "playa", "familia"],
+      "contacto": null,
+      "enlaces": []
+    },
+    {
+      "id": "tip-007",
+      "titulo": "Miradores imprescindibles en Bariloche",
+      "categoria": "Excursiones",
+      "subcategoria": "Miradores",
+      "descripcion": "Descubre los miradores con las mejores vistas panorámicas de la región.",
+      "detalles": [
+        "Ubicación: Cerro Campanario, Punto Panorámico, Cerro Otto",
+        "Equipamiento: Cámara, binoculares, ropa cómoda",
+        "Apto niños: Sí",
+        "\"Cada vista es un recuerdo imborrable\"",
+        "Relevancia: esencial"
+      ],
+      "image": "/images/tips/panoramica-cerro-campanario.webp",
+      "relevancia": "esencial",
+      "tags": ["miradores", "naturaleza", "paisajes"],
+      "contacto": null,
       "enlaces": []
     }
   ]
-} 
+}

@@ -41,6 +41,10 @@ const Contact = () => {
     };
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const initMap = () => {
     const L = (window as any).L;
     if (!L) return;

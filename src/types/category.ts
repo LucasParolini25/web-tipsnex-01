@@ -21,6 +21,7 @@ export interface Item extends BaseCategory {
   recommendations?: string[];
   includes?: string[];
   notIncludes?: string[];
+  details?: string[];
 }
 
 export interface ExcursionItem extends Item {

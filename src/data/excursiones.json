@@ -4,11 +4,31 @@
       "id": "cerro-catedral",
       "title": "Cerro Catedral",
       "description": "El centro de esquí más importante de Sudamérica",
-      "image": "/images/excursiones/cerro-catedral.jpg",
+      "fullDescription": "Ubicado a solo 19 km del centro de Bariloche, el Cerro Catedral es uno de los principales centros de esquí del hemisferio sur. Ofrece actividades durante todo el año: esquí y snowboard en invierno, y trekking, mountain bike y vistas panorámicas en verano. Cuenta con medios de elevación, confiterías en altura y escuelas para quienes se inician en los deportes de nieve. Una excursión ideal tanto para principiantes como para expertos, con servicios adaptados para toda la familia.",
+      "image": "/images/excursiones/cerro-catedral/main.webp",
+      "gallery": [
+        "/images/excursiones/cerro-catedral/main.webp",
+        "/images/excursiones/cerro-catedral/detalle1.webp",
+        "/images/excursiones/cerro-catedral/detalle2.webp"
+      ],
+      "category": "Excursiones",
+      "subcategory": "Aventura",
+      "price": "$50.000",
       "duration": "1 día",
-      "price": "Desde $50.000",
+      "excursionType": "TERRESTRE",
+      "meetingPoint": "Centro de Bariloche o punto acordado",
+      "includes": [
+        "Traslado ida y vuelta",
+        "Guía profesional",
+        "Tiempo libre para explorar o tomar clases de esquí"
+      ],
+      "notIncludes": [
+        "Pase de acceso a medios de elevación",
+        "Equipamiento de esquí o snowboard",
+        "Comidas y bebidas"
+      ],
       "difficulty": "Moderado",
-      "whatsappLink": "https://wa.me/1234567890"
+      "whatsappLink": "https://wa.me/5492944674325?text=Hola%2C%20me%20interesa%20la%20excursi%C3%B3n%20Cerro%20Catedral"
     },
     {
       "id": "circuito-chico",
@@ -18,9 +38,8 @@
       "image": "/images/excursiones/circuito-chico/main.webp",
       "gallery": [
         "/images/excursiones/circuito-chico/main.webp",
-        "/images/excursiones/circuito-chico/campanario.webp",
-        "/images/excursiones/circuito-chico/llao-llao.webp",
-        "/images/excursiones/circuito-chico/panoramica.webp"
+        "/images/excursiones/circuito-chico/detalle1.webp",
+        "/images/excursiones/circuito-chico/detalle2.webp"
       ],
       "category": "Excursiones",
       "subcategory": "Circuitos",
@@ -47,9 +66,8 @@
       "image": "/images/excursiones/siete-lagos/main.webp",
       "gallery": [
         "/images/excursiones/siete-lagos/main.webp",
-        "/images/excursiones/siete-lagos/san-martin.webp",
-        "/images/excursiones/siete-lagos/lagos.webp",
-        "/images/excursiones/siete-lagos/ruta.webp"
+        "/images/excursiones/siete-lagos/detalle1.webp",
+        "/images/excursiones/siete-lagos/detalle2.webp"
       ],
       "category": "Excursiones",
       "subcategory": "Circuitos",
@@ -76,9 +94,8 @@
       "image": "/images/excursiones/tronador/main.webp",
       "gallery": [
         "/images/excursiones/tronador/main.webp",
-        "/images/excursiones/tronador/ventisquero.webp",
-        "/images/excursiones/tronador/cascada.webp",
-        "/images/excursiones/tronador/pampa.webp"
+        "/images/excursiones/tronador/detalle1.webp",
+        "/images/excursiones/tronador/detalle2.webp"
       ],
       "category": "Excursiones",
       "subcategory": "Montaña",
@@ -106,9 +123,8 @@
       "image": "/images/excursiones/isla-victoria/main.webp",
       "gallery": [
         "/images/excursiones/isla-victoria/main.webp",
-        "/images/excursiones/isla-victoria/arrayanes.webp",
-        "/images/excursiones/isla-victoria/playa.webp",
-        "/images/excursiones/isla-victoria/navegacion.webp"
+        "/images/excursiones/isla-victoria/detalle1.webp",
+        "/images/excursiones/isla-victoria/detalle2.webp"
       ],
       "category": "Excursiones",
       "subcategory": "Navegación",
@@ -135,9 +151,8 @@
       "image": "/images/excursiones/puerto-blest/main.webp",
       "gallery": [
         "/images/excursiones/puerto-blest/main.webp",
-        "/images/excursiones/puerto-blest/cascada.webp",
-        "/images/excursiones/puerto-blest/selva.webp",
-        "/images/excursiones/puerto-blest/navegacion.webp"
+        "/images/excursiones/puerto-blest/detalle1.webp",
+        "/images/excursiones/puerto-blest/detalle2.webp"
       ],
       "category": "Excursiones",
       "subcategory": "Navegación",
@@ -165,9 +180,8 @@
       "image": "/images/excursiones/bolson/main.webp",
       "gallery": [
         "/images/excursiones/bolson/main.webp",
-        "/images/excursiones/bolson/feria.webp",
-        "/images/excursiones/bolson/lago-puelo.webp",
-        "/images/excursiones/bolson/productos.webp"
+        "/images/excursiones/bolson/detalle1.webp",
+        "/images/excursiones/bolson/detalle2.webp"
       ],
       "category": "Excursiones",
       "subcategory": "Circuitos",
